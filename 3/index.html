@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 3</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <a
+          class="header__phone-link header__phone-link_size_big"
+          href="tel:88004444343"
+          >8-800-444-43-43</a
+        >
+        <span class="header__city header__city_size_medium"
+          >Санкт‑Петербург</span
+        >
+      </header>
+
+      <section class="content"></section>
+
+      <footer class="footer footer_align_right">
+        <a
+          class="footer__phone-link footer__phone-link_size_medium"
+          href="tel:88004444343"
+          >8-800-444-43-43</a
+        >
+      </footer>
+    </div>
+
+    <section class="modal hidden">
+      <button class="modal__btn-close">⨉</button>
+      <h3 class="modal__title">
+        Ваш город <span class="modal__city-text">Санкт‑Петербург</span>?
+      </h3>
+      <div class="modal__actions-wrapper">
+        <button class="modal__action-button-yes">Да</button>
+        <button class="modal__action-button-no">Нет</button>
+        <button class="modal__action-button-get hidden">Определить автоматически</иг>
+      </div>
+      <form class="modal__form hidden" action="#">
+        <label for="city">Выбрать вручную</label>
+        <select class="modal__form-select" name="city">
+        </select>
+      </form>
+    </section>
+
+    <div class="overlay hidden"></div>
+
+    <script
+      src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU&apikey=330f6a4f-b4cd-4749-a3ac-cc72242f2ba3"
+      type="text/javascript"
+    ></script>
+    <!-- <script
+      src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"
+      type="text/javascript"
+    ></script> -->
+    <script src="main.js" type="text/javascript"></script>
+  </body>
+</html>
